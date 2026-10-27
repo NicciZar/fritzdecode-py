@@ -35,6 +35,11 @@ python fritzdecode.py --selftest
 - Only works for exports created **with a password**. Without one, the key is device-specific.
 - Whether a different model or firmware accepts the decrypted export depends on AVM.
 
+## Tested with
+
+- Export decrypted from a **FRITZ!Box 6490 Cable**
+- Converted phonebook imported successfully on a **FRITZ!Box 6670 Cable**
+
 ## License
 
 AGPL-3.0-or-later, the same license as the original Rust crate.
