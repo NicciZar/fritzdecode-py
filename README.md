@@ -38,3 +38,14 @@ python fritzdecode.py --selftest
 ## License
 
 AGPL-3.0-or-later, the same license as the original Rust crate.
+
+## Phonebook converter
+
+`fritzphonebook.py` turns the raw `phonebook` file from the export (see `--extract`) into the XML format the FRITZ!Box can import under Telefonie > Telefonbuch > Wiederherstellen.
+
+```
+python fritzphonebook.py out_dir/phonebook --list
+python fritzphonebook.py out_dir/phonebook -o Telefonbuch.xml
+```
+
+The internal phonebook (owner 255, with handsets, answering machine and alarms) is skipped unless `--include-internal` is given. If there are several regular phonebooks, each is written to its own file.
